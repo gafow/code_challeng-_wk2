@@ -32,3 +32,16 @@ function addItems() {
 
 
 
+
+// purchase item
+function purchasedItem(item) {
+    const obj = shopping_items.find(product => product.name === item)
+    obj.isPurchased = true
+    CONTAINER.innerHTML = ''
+    renderItems()
+
+}
+
+
+
+
